@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Livia Mitrica</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile" onclick="startAnimationName()">Home</a></li>
+                <li><a href="#experience" onclick="startAnimation()">Experience</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpeg" alt="Livia M. profile picture" id="profile-pic" class="profile-pic"/> 
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title" id="name"></h1>
+            <p class="section__text_p2" id="job_title"></p>
+            <p class="section__text_p3" id="birthdate">Birthdate: </p>
+            <p class="section__text_p4" id="current_city">Currently living in: </p>
+            <p class="section__text_p5" id="hometown">Originally from: </p>
+
+            <div id="socials-container">
+                <img
+                src="/assets/linkedin.png"
+                alt="Linkedin profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/liviamitrica/'"
+                />
+                <img
+                src="/assets/github.png"
+                alt="Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/LiviaMitrica'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <div class="divider div-transparent div-dot"></div>
+
+    <section id="experience">
+        <div class="section__text_experience">
+            <p class="section__title_experience">Work Experience</p>
+            <div class="section__text_work_experience" id="work_experience_container"></div>
+           
+            <p class="section__title_experience">Education</p>
+            <div class="section__text_education" id="education_container"></div>
+
+            <p class="section__title_experience">Volunteering Experience</p>
+            <div class="section__text_volunteering_experience" id="volunteering_experience_container"></div>
+        </div>
+    </section>
+
+    <div class="divider div-transparent div-dot"></div>
+
+    <section id="hobbies">
+        <div class="section__text_hobbies" id="hobbies_container">
+           <p>Apart from coding I also enjoy:</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+            <!-- Add more images here -->
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+            <!-- Add more images here -->
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+            <!-- Add more images here -->
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+             <!-- Add more images here -->
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+             <!-- Add more images here -->
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+            <!-- Add more images here -->
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+            <!-- Add more images here -->
+            <img src="./assets/travelling.jpeg" class="image"/>
+            <img src="./assets/painting.png" class="image"/>
+            <img src="./assets/volunteering.jpeg" class="image"/>
+            <img src="./assets/reading.jpeg" class="image"/>
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed by Livia Mitrica as part of Programming Toolbox class</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a, .btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: peachpuff;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: peachpuff;
+}
+
+.logo {
+  font-size: 2rem;
+  color: peru;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* SECTIONS */
+
+section {
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.profile-pic {
+    border-radius: 100px;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text_p2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: peru;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+@keyframes inner-left {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+@keyframes inner-right {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: none;
+    }
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.section__text_experience {
+    align-self: center;
+    text-align: justify;
+}
+
+.section__title_experience {
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: peru;
+}
+
+.section__text_work_experience, 
+.section__text_volunteering_experience,
+.section__text_education {
+    margin-bottom: 20px;
+}
+
+.experience__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience__subtitle {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.experience__timeframe {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.experience__description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-inline-start: 50px;
+}
+
+/* Hobbies */
+
+.section__text_hobbies {
+    margin: 1rem 0;
+    align-self: center;
+    text-align: justify;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 10vh;
+  margin: 0 10rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: peru;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+
+/* Pictures animation */
+.container {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.image-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    animation: slide 25s linear infinite;
+}
+
+.image {
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+@keyframes fade {
+    0% {
+        /* Starting state */
+        opacity: 0;
+    }
+    100% {
+        /* Ending state */
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-50%, 0); /* Adjust as needed */
+    }
+}
+
+@keyframes scale-pic {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.15); /* Scaled up */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+  }
+
+.animationExperience {
+    animation: inner-right 3s 1s ease;
+}
+
+.animationProfile {
+    animation: inner-left 1s 1s ease both;
+}
+
+.animatePic {
+    animation: scale-pic 4s ease;
+}

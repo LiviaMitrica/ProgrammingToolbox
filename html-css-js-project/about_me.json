@@ -1,0 +1,75 @@
+{
+    "name": "Livia",
+    "surname": "Mitrica",
+    "job_title": "Android developer",
+    "work_place": "Garmin",
+    "birthdate": "11.06.1999",
+    "current_city": "Cluj-Napoca",
+    "hometown": "Craiova",
+    "work_experience": [
+        {
+            "place": "Garmin, Cluj-Napoca",
+            "position": "Mid Software engineer",
+            "timeframe": "July 2023 - present",
+            "responsabilities": [
+                "Working on Connect Mobile App(Fitness App) - developing new features and improving existing ones.", 
+                "Working mainly with Kotlin and JetPack Compose.", 
+                "Experience working with Git and Agile Methodologies.",
+                "Collaborated with cross-functional teams to deliver high-quality software solutions."
+            ]
+        },
+        {
+            "place": "Garmin, Cluj-Napoca",
+            "position": "Junior Software Engineer",
+            "timeframe": "April 2022 - June 2023",
+            "responsabilities": []
+        },
+        {
+            "place": "Garmin, Cluj-Napoca",
+            "position": "Android Intern",
+            "timeframe": "July 2021 - April 2022",
+            "responsabilities": []
+        }
+    ],
+    "education": [
+        {
+            "place": "Babes-Bolyai University, Cluj-Napoca",
+            "specialization": "Data Science for Industry and Society(MSc)",
+            "timeframe": "July 2023 - present"
+        },
+        {
+            "place": "Technical University, Cluj-Napoca",
+            "specialization": "Computer Science(BSc)",
+            "timeframe": "July 2018 - July 2022"
+        },
+        {
+            "place": "Fratii Buzesti National College, Craiova",
+            "specialization": "Mathematics and Informatics",
+            "timeframe": "July 2014 - July 2018"
+        }
+    ],
+    "volunteering": [
+        {
+            "organization": "BEST Org",
+            "timeframe": "October 2019 - present",
+            "responsabilities": [
+                "Participated in organizing educational events and workshops.",
+                "Contributed to promoting technological education and collaboration among students.",
+                "Coordinating several teams and projects responsible for creating promotional materials and for organizing design workshops within the department."
+            ]
+        },
+        {
+            "organization": "Lindenfeld Association",
+            "timeframe": "July 2016 - December 2019",
+            "responsabilities": [
+                "Organised social activities with children in foster cares, helped them with their homework."
+            ]
+        }
+    ],
+    "hobbies_interests": [
+        "travelling",
+        "painting",
+        "reading",
+        "volunteering"
+    ] 
+}
